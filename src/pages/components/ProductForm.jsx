@@ -39,9 +39,9 @@ const ProductForm = () => {
 
     try {
       if (id) {
-        await axios.put(`http://localhost:5000/api/products/${id}`, product);
+        await axios.put(`${REACT_BACKEND_URL}/api/products/${id}`, product);
       } else {
-        await axios.post(`http://localhost:5000/api/products`, product);
+        await axios.post(`${REACT_BACKEND_URL}/api/products`, product);
       }
       navigate('/');
     } catch (err) {
