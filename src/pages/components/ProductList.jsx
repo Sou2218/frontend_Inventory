@@ -7,7 +7,7 @@ const ProductList = () => {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get(`${REACT_BACKEND_URL}/api/products`);
+      const res = await axios.get(`https://backend-inventory-soundarya.vercel.app/api/products`);
       setProducts(res.data.data || []);
     } catch (error) {
       console.error("Error fetching products:", error.message);
@@ -18,7 +18,7 @@ const ProductList = () => {
   const deleteProduct = async (id) => {
     if (!window.confirm("Are you sure you want to delete this product?")) return;
     try {
-      await axios.delete(`${REACT_BACKEND_URL}/api/products/${id}`);
+      await axios.delete(`https://backend-inventory-soundarya.vercel.app/api/products/${id}`);
       fetchData();
     } catch (err) {
       console.error("Error deleting product:", err.message);

@@ -1,21 +1,17 @@
 # 🛍 Product Inventory Management App
 
-A full-stack **MERN** (MongoDB, Express, React, Node.js) application that allows users to manage a list of products. Users can **add, view, edit, and delete** products with form validations on both the frontend and backend.
+A full-stack MERN (MongoDB, Express, React, Node.js) application that allows users to manage a list of products. Users can add, view, edit, and delete products with form validations on both the frontend and backend.
 
 ---
 
 ## 🚀 Live Demo
 
-🔗 Frontend: [https://your-frontend-url.vercel.app](https://your-frontend-url.vercel.app)  
-🔗 Backend: [https://your-backend-url.vercel.app](https://your-backend-url.vercel.app)
+🔗 Frontend: frontend-inventory-git-master-sou2218s-projects.vercel.app
+🔗 Backend: backend-inventory-git-master-sou2218s-projects.vercel.app
 
 ---
 
-## 📸 Screenshots
 
-(Add screenshots of your product list, add/edit form here.)
-
----
 
 ## 📦 Features
 
