@@ -5,7 +5,6 @@ import { useNavigate, useParams } from 'react-router-dom';
 const ProductForm = () => {
 
   
-    const REACT_BACKEND_URL = 'http://localhost:5000'
 
   const [product, setProduct] = useState({ name: '', price: '', category: '', stock: '' });
   const [errors, setErrors] = useState({});
@@ -23,7 +22,7 @@ const ProductForm = () => {
 
   const fetchProduct = async () => {
     try {
-      const res = await axios.get(`${REACT_BACKEND_URL}/api/products/${id}`);
+      const res = await axios.get(`https://backend-inventory-soundarya.vercel.app/api/products/${id}`);
       setProduct(res.data.data);
     } catch (err) {
       console.error("Failed to fetch product", err);
@@ -43,9 +42,9 @@ const ProductForm = () => {
 
     try {
       if (id) {
-        await axios.put(`${REACT_BACKEND_URL}/api/products/${id}`, product);
+        await axios.put(`https://backend-inventory-soundarya.vercel.app/api/products/${id}`, product);
       } else {
-        await axios.post(`${REACT_BACKEND_URL}/api/products`, product);
+        await axios.post(`https://backend-inventory-soundarya.vercel.app/api/products`, product);
       }
       navigate('/');
     } catch (err) {
